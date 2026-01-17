@@ -7,6 +7,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 flex justify-between items-center shadow-lg">
       <h1 className="text-xl font-bold tracking-wide">Job Portal</h1>
+     <h2 className="text-sm font-medium">Welcome!! My website ~A.J</h2>
 
       <div className="space-x-6 text-sm font-medium flex items-center">
         {user ? (
