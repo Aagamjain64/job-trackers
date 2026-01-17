@@ -83,7 +83,7 @@ const CreateJob = () => {
           <input name="location" placeholder="Location" className="input" onChange={handleChange} value={form.location} />
           <input name="salary" placeholder="Salary" className="input" onChange={handleChange} value={form.salary} />
           <input name="experience" placeholder="Experience" className="input" onChange={handleChange} value={form.experience} />
-          <input name="status" placeholder="Status (Open/Closed)" className="input" onChange={handleChange} value={form.status} />
+          <input name="status" placeholder="Applied/Interview/Offer/Rejected" className="input" onChange={handleChange} value={form.status} />
         </div>
 
         <textarea
