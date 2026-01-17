@@ -11,7 +11,7 @@
     app.use(express.json());
 
 app.use(cors({
-  origin: ["http://localhost:5173","https://job-trackerss.netlify.app/"], // frontend
+  origin: ["http://localhost:5173","https://job-trackerss.netlify.app"], // frontend
   credentials: true
 }));
     // Routes
