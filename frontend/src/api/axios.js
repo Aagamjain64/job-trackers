@@ -1,11 +1,16 @@
 import axios from "axios";
 
+<<<<<<< HEAD
 // Override with VITE_API_BASE_URL (e.g. http://localhost:5000) when your data lives on a local API.
 const baseURL =
   import.meta.env.VITE_API_BASE_URL || "https://job-trackers.onrender.com";
 
 const API = axios.create({
   baseURL,
+=======
+const API = axios.create({
+  baseURL: "https://job-trackers.onrender.com",
+>>>>>>> bfe5b39f72b3d39908224b23c61477278f4bc350
 });
 
 // Automatically attach token
