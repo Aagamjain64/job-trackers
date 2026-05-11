@@ -23,7 +23,6 @@ const CreateJob = () => {
     if (jobData) {
       const job = JSON.parse(jobData);
       setForm({
-<<<<<<< HEAD
         // Support both old/local keys and current backend keys.
         companyName: job.companyName || job.company || "",
         role: job.role || job.jobRole || job.title || job.position || "",
@@ -32,15 +31,6 @@ const CreateJob = () => {
         status: job.status || "",
         experience: job.experience || "",
         description: job.description || job.notes || "",
-=======
-        companyName: job.companyName,
-        role: job.role,
-        location: job.location,
-        salary: job.salary,
-        status: job.status,
-        experience: job.experience,
-        description: job.description,
->>>>>>> bfe5b39f72b3d39908224b23c61477278f4bc350
       });
       setEditMode(true);
       setJobId(job._id);
@@ -58,13 +48,9 @@ const CreateJob = () => {
   const payload = {
     company: form.companyName,       // map to backend
     role: form.role,
-<<<<<<< HEAD
     location: form.location,
     salary: Number(form.salary),     // convert to number
     experience: form.experience,
-=======
-    salary: Number(form.salary),     // convert to number
->>>>>>> bfe5b39f72b3d39908224b23c61477278f4bc350
     status: form.status || "Applied",
     notes: form.description          // map to backend
   };
@@ -80,11 +66,7 @@ const CreateJob = () => {
       });
     }
 
-<<<<<<< HEAD
     navigate("/");
-=======
-    navigate("/dashboard");
->>>>>>> bfe5b39f72b3d39908224b23c61477278f4bc350
   } catch (err) {
     console.error("ERROR:", err.response?.data || err.message);
   }
