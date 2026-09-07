@@ -52,7 +52,7 @@ const Dashboard = () => {
             <p className="text-sm text-gray-500 mb-3">{job.company}</p>
 
             <div className="text-sm text-gray-700 space-y-1">
-              <p><b>💰 Salary:</b> {job.salary.replace('$', '₹')}</p>
+              <p><b>💰 Salary:</b><p>Salary: ₹{job.salary}</p></p>
               <p><b>📌 Status:</b> {job.status}</p>
             </div>
 
